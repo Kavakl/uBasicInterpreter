@@ -1,0 +1,5 @@
+A = 10 B = 20 C = A+B%3*2 GOSUB thirdlabel;
+:firstlabel C = A GOTO secondlabel;
+:secondlabel GOTO thirdlabel;
+:thirdlabel IF C = A THEN GOTO quadralable;
+:quadralable PRINT C
